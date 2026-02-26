@@ -1,0 +1,18 @@
+html {
+    font-family: sans-serif;
+    background-color: lightgreen;
+    color: black;
+    font-size: 1rem;
+}
+
+h1 {
+  color: blue;
+}
+
+p {
+  color: blue;
+}
+
+nav a {
+    color: pink;
+}
