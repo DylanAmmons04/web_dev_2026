@@ -35,7 +35,20 @@ html {
   padding: 40px;
   border-radius: 8px;
 }
+.sizing-parent {
+  width: 300px;
+  border: 4px solid #333;
+  background: #eee;
+  margin: 20px 0;
+}
 
+.sizing-child {
+  width: 100%;
+  padding: 25px;
+  background: #3498db;
+  color: white;
+  box-sizing: border-box;
+  
 .nav-list {
   list-style: none;
   padding: 0;
