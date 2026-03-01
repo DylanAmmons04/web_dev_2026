@@ -6,68 +6,77 @@
     <meta name="author" content="Dylan Ammons">
     <meta name="description" content="Learn about Dylan and his interests.">
     <link rel="stylesheet" href="css/style.css">
-    <title>About Dylan Ammons</title>
+    <title>About Dylan Ammons | Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>About Dylan Ammons</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+    <header id="main-header">
+        <h1 class="brand-name">About Dylan Ammons</h1>
+        <nav aria-label="Primary" class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-        <p>My name is Dylan and I am from Louisville, Kentcuky.</p> 
+        <p class="content-text">My name is Dylan and I am from Louisville, Kentucky.</p> 
         
         <section>
-            <h2>Here's a Picture of my dog:</h2>
+            <h2 class="section-title">Here's a Picture of my dog:</h2>
           
-        <picture>
-          <source srcset="media/bella_small.png" media="(max-width: 1169px)">
-          <source srcset="media/bella_large.png" media="(min-width: 1170px)">
-          <img src="media/bella_large.png" alt="Picture of my dog bella with sunglasses">
-        </picture>
+            <picture>
+              <source srcset="media/bella_small.png" media="(max-width: 1169px)">
+              <source srcset="media/bella_large.png" media="(min-width: 1170px)">
+              <img src="media/bella_large.png" alt="Picture of my dog bella with sunglasses" style="max-width: 100%; height: auto; border-radius: 8px;">
+            </picture>
         </section>
 
-        <h1>Some things I enjoy!</h1>
-        <h2>Hobbies:</h2>
-        <h3>Video Games</h3>
-        <ul>
-            <li>Arc Raiders</li>
-            <li>Rocket League</li>
-            <li>Any sports game</li>
-        </ul>
-        <p>Video games are a great way for me to wind down and enjoy myself.
-            I have played many different games over my life, but these are the current favorites. I also use it as a way to connect with friends I dont see much anymore.
-            Along with that it is a great way to wind down after school or work and is a really relaxing activity for me. I think there is a negative stigma around video games sometimes
-            that views them in a unfair way. Many people dont see the benifits that I said before because they never played them n the first place.
-        </p>
-        <h3>Sports</h3>
-        <ul>
-            <li>Soccer</li>
-            <li>Football</li>
-            <li>Golf</li>
-        </ul>
-        <p>I have played sports my entire life, and they are a big part of who I am today. I love being active and still play these whenever I can.
-             I recenely picked up golf but am excited to improve at it. My main sport was soccer which I played my entire life for a club team and school team. It was always my favorite and the one I put the
-            most time into. I also enjoy playing football. Although I never played at a competitive level, I have really enjoyed playing flag intramurals at Uk.
-        </p>
-        <h3>Music</h3>
-        <ul>
-            <li>Kanye West</li>
-            <li>Tame Impala</li>
-            <li>Frank Ocean</li>
-        </ul>
-        <p>Music is something I listen to everyday. I use it as a way to focus or to enjoy myself. I am always looking to listen to new stuff and broaden the genres I listen to. 
-            I have only been to one festival, but once I start working and have some income, I plan to attend many more as it is something I really enjoy. The one I did get to attend was called Forecastle.
-            This was in Louisville, Ky and I got to see one of my favorite artists Tame Impala.
-        </p>
+        <h2 class="section-title">Some things I enjoy!</h2>
+        
+        <section class="hobby-section">
+            <h3 class="subsection-title">Video Games</h3>
+            <ul class="hobby-list">
+                <li>Arc Raiders</li>
+                <li>Rocket League</li>
+                <li>Any sports game</li>
+            </ul>
+            <p class="content-text">
+                Video games are a great way for me to wind down and enjoy myself.
+                I have played many different games over my life, but these are the current favorites. I also use it as a way to connect with friends I dont see much anymore.
+            </p>
+        </section>
+
+        <section class="hobby-section">
+            <h3 class="subsection-title">Sports</h3>
+            <ul class="hobby-list">
+                <li>Soccer</li>
+                <li>Football</li>
+                <li>Golf</li>
+            </ul>
+            <p class="content-text">
+                I have played sports my entire life, and they are a big part of who I am today. I love being active and still play these whenever I can.
+                I recently picked up golf but am excited to improve at it.
+            </p>
+        </section>
+
+        <section class="hobby-section">
+            <h3 class="subsection-title">Music</h3>
+            <ul class="hobby-list">
+                <li>Kanye West</li>
+                <li>Tame Impala</li>
+                <li>Frank Ocean</li>
+            </ul>
+            <p class="content-text">
+                Music is something I listen to everyday. I use it as a way to focus or to enjoy myself. I am always looking to listen to new stuff and broaden the genres I listen to.
+            </p>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Dylan Ammons</p>
+
+    <footer id="main-footer">
+        <p class="copyright">&copy; 2026 Dylan Ammons</p>
     </footer>
+</body>
+</html>
