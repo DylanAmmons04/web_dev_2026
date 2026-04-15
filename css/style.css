@@ -1,78 +1,120 @@
-html {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f0fff0;
-  line-height: 1.6;
-}
-
-#main-header {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 3px solid blue;
-}
-
-#main-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  background-color: #e0e0e0;
-}
-
-.page-name {
-  color: blue;
-  margin-bottom: 5px;
-}
-
-.tagline {
-  font-style: italic;
-  color: #555; 
-}
-
-.container {
-  max-width: 900px;
-  margin: 20px auto;
-  background: white;
-  padding: 40px;
-  border-radius: 8px;
-}
-.sizing-parent {
-  width: 300px;
-  border: 4px solid #333;
-  background: #eee;
-  margin: 20px 0;
-}
-
-.sizing-child {
-  width: 100%;
-  padding: 25px;
-  background: #3498db;
-  color: white;
-  box-sizing: border-box;
-}
-.nav-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: blue; 
-}
-
-.nav-link.active {
-  color: blue;
-  border-bottom: 2px solid blue;
-}
-
-.content-text {
-  color: #222; 
-  margin-bottom: 15px;
-}
+/* =========================================
+   1. GLOBAL STYLES & TYPOGRAPHY
+   ========================================= */
+   html {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0fff0;
+    line-height: 1.6;
+    /* Added global font-size and letter-spacing for readability */
+    font-size: 16px;
+    letter-spacing: 0.02em; 
+  }
+  
+  /* Child Selector: Targeting only direct paragraph children of the body */
+  body > p {
+    margin-bottom: 1rem;
+  }
+  
+  /* =========================================
+     2. LAYOUT & BOX MODEL
+     ========================================= */
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    /* Flexbox for responsiveness without media queries */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Descendant Selector: Targeting any images inside the container */
+  .container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  
+  .sizing-parent {
+    width: 300px;
+    /* Added a dashed border style requirement */
+    border: 4px dashed #333;
+    background: #eee;
+    margin: 20px 0;
+  }
+  
+  .sizing-child {
+    width: 100%;
+    padding: 25px;
+    background: #3498db;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  /* =========================================
+     3. HEADER & NAVIGATION
+     ========================================= */
+  #main-header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid blue;
+  }
+  
+  /* Flexbox for Navigation */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on mobile screens */
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Pseudo-class: Hover State */
+  .nav-link:hover {
+    color: blue; 
+  }
+  
+  /* Pseudo-class: Active State */
+  .nav-link.active {
+    color: blue;
+    border-bottom: 2px solid blue;
+  }
+  
+  /* =========================================
+     4. TEXT COMPONENTS
+     ========================================= */
+  .page-name {
+    color: blue;
+    margin-bottom: 5px;
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: #555; 
+  }
+  
+  .content-text {
+    color: #222; 
+    margin-bottom: 15px;
+  }
+  
+  /* =========================================
+     5. FOOTER
+     ========================================= */
+  #main-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: #e0e0e0;
+  }
